@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Alarm UI</title>
+    <link rel="stylesheet" href="AssembleClcokSTyle.css">
+    <style>
+        .box {
+            user-select: none;
+        }
+
+        .hero {
+            background: url(t2.jpg);
+            width: 100%;
+            height: 90vh;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="allicons">
+            <div style="background-color: white;" class="box" id="icon1"><span>Alarm</span><i
+                    class="fa-solid fa-bell"></i></div>
+            <div class="box" id="icon2"><span>Clock</span><i class="fa-regular fa-clock"></i></div>
+            <div class="box" id="icon3"><span>Stopwatch</span><i class="fa-solid fa-stopwatch"></i></a></div>
+            <div class="box" id="icon4"><span>Timer</span><i class="fa-solid fa-hourglass"></i></div>
+        </div>
+    </header>
+    <div class="hero">
+
+        <div class="alarm" style="display: none;">
+            <div class="herobox">
+                <input type="text" name="alarm" id="ahr" placeholder="Hr" class="alarmInput">
+                <input type="text" name="alarm" id="amin" placeholder="Min" class="alarmInput">
+                <input type="text" name="alarm" id="asec" placeholder="Sec" class="alarmInput">
+            </div>
+            <div class="subalarm">
+                <button id="SetAlaram">Set Alarm</button>
+                <div class="alarmListBox" style="display: none;"></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="timecontainer" style="display: none;">
+            hello baby its your clock
+            <div id="timebox"></div>
+            <div id="timeline"></div>
+        </div>
+
+
+
+
+        <div class="stopwatch" style="display: none;font-size: 55px;">
+            <div class="container"></div>
+            <div class="btns">
+                <button class="subbtn" id="start"><i class="fa-solid fa-play"></i></button>
+                <button class="subbtn" id="stop" id="red"
+                    style="background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);">Stop</button>
+                <button class="subbtn" id="reset" id="blue"
+                    style="background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);">Reset</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="timer" style="display: flex;">
+            <div class="timercontainer">
+                <input min="0" max="59" type="text" id="timer-hr" placeholder="Hour" style="border: none;">
+                <span>:</span>
+                <input min="0" max="59" type="text" id="timer-min" placeholder="Minute">
+                <span>:</span>
+                <input min="0" max="59" type="text" id="timer-sec" placeholder="Seconds" style="border: none;">
+            </div>
+            <div class="btns">
+                <button class="subbtn" id="tstart"><i class="fa-solid fa-play"></i></button>
+                <button class="subbtn" id="tstop"
+                    style="background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);">Stop</button>
+                <button class="subbtn" id="treset"
+                    style="background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);">Reset</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+<script src="Clockscript.js"></script>
+
+</html>

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baumans&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/horizontal-rule?f=classic&s=solid">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/horizontal-rule?f=classic&s=solid">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baumans&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baumans&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/horizontal-rule?f=classic&s=solid">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/horizontal-rule?f=classic&s=solid">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baumans&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <title>Responsive Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+            /* background: linear-gradient(89.9deg, rgb(208, 246, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%); */
+
+        }
+
+        body {
+
+            background: radial-gradient(circle at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgb(189, 250, 205) 35.6%, rgb(243, 250, 189) 52.9%, rgb(250, 227, 189) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            color: #333;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #navbar {
+            background: #ffffff;
+            border-bottom: 2px solid #e5e5e5;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #navbar span {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #333;
+            font-family: "Sevillana", cursive;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        #menu span {
+            margin: 0 15px;
+            cursor: pointer;
+            transition: color 0.3s;
+            font-size: 1rem;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #menu span:hover {
+            color: #007bff;
+        }
+
+        .blackbtn,
+        #navbtn {
+            background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.1s;
+        }
+
+        #navbtn:hover {
+            background: linear-gradient(to right, #434343 0%, black 100%);
+            transform: scale(1.1);
+        }
+
+        .hello_msg {
+            text-align: center;
+            margin-top: 50px;
+
+            background-color: transparent;
+            z-index: 1000;
+            position: relative;
+
+
+            top: -300px;
+
+
+        }
+
+        .hello_msg h1 {
+            font-size: 2rem;
+            color: #444;
+
+
+        }
+
+        .hello_msg h4 {
+            font-size: 1.2rem;
+            color: #666;
+
+
+        }
+
+        .container {
+            display: none;
+        }
+
+        /* Form Styling */
+        #login,
+        #register {
+            background: #ffffff;
+            border: 2px solid #e5e5e5;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 50%;
+            margin: 20px auto;
+            display: none;
+            position: relative;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #444;
+            font-family: "Poppins";
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        #loginbtn,
+        #registerbtn {
+            width: 100%;
+            /* background: #28a745; */
+            background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #loginbtn:hover,
+        #registerbtn:hover {
+            background: linear-gradient(to right, #434343 0%, black 100%);
+            transform: scale(0.9);
+        }
+
+        .pointer {
+            display: block;
+            text-align: center;
+            color: #007bff;
+            margin-top: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .pointer:hover {
+            color: #0056b3;
+        }
+
+        /* Close Button */
+        .xbtn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            color: #999;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .xbtn:hover {
+            color: #333;
+        }
+
+        /* Alert Styling */
+        .alert {
+            border: 2px solid #333;
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        .alertPapa {
+            display: none;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 500px) {
+            .imghero {
+                position: relative;
+                top: 28vh;
+                min-height: 40vh;
+                width: 90%;
+                object-fit: fill;
+
+                /* object-fit: contain; */
+                object-position: center;
+
+            }
+
+            #login,
+            #register {
+                background: #ffffff;
+                border: 2px solid #e5e5e5;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                /* padding: 20px; */
+                max-width: 500px;
+                min-width: 300px;
+                width: 100%;
+                /* margin: auto; */
+                display: none;
+                position: relative;
+                z-index: 100;
+            }
+
+
+
+
+
+        }
+
+        @media (max-width: 730px) {
+
+            i {
+                font-size: 5vw;
+                margin-top: -12px;
+
+
+
+            }
+
+            #navbar {
+
+                align-items: flex-start;
+
+            }
+
+            #menu {
+
+                display: none;
+            }
+
+            #menu span {
+                margin: 5px 0;
+            }
+
+            #login,
+            #register {
+                padding: 15px;
+            }
+
+            form input {
+                font-size: 0.9rem;
+            }
+
+            #loginbtn,
+            #registerbtn {
+                font-size: 0.9rem;
+            }
+
+            label {
+                font-family: "Poppins", serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+        }
+
+        .papa {
+            display: none;
+            height: 100vh;
+            justify-content: center;
+            background: linear-gradient(70.6deg, rgb(172, 30, 255) 0.3%, rgb(65, 35, 251) 55.8%, rgb(35, 251, 224) 105.1%);
+            width: 100%;
+            padding: 20px;
+
+
+        }
+
+        #login {
+            background: #ffffff;
+            border: 2px solid #e5e5e5;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 50%;
+            margin: auto;
+            display: none;
+            position: relative;
+            z-index: 100;
+
+        }
+
+        #register {
+            background: #ffffff;
+            border: 2px solid #e5e5e5;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 50%;
+            margin: auto;
+            margin: auto;
+            display: none;
+            position: relative;
+           
+        }
+
+        .pic {
+            display: none;
+            background: url(pic2.jpg);
+            background-position: center;
+            height: 50vh;
+            width: 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 20px;
+
+        }
+
+        i {
+            font-size: 5vh;
+            margin-top: 40px;
+
+        }
+
+        .imghero {
+            margin-top: 10vh;
+
+            min-height: 40vh;
+            width: 70%;
+            object-fit: contain;
+            object-position: center;
+
+        }
+
+        .repapa {
+
+            height: auto;
+            background: linear-gradient(70.6deg, rgb(172, 30, 255) 0.3%, rgb(65, 35, 251) 55.8%, rgb(35, 251, 224) 105.1%);
+            width: 100%;
+            /* display: none;
+            display: none; */
+            height: 100vh;
+            justify-content: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            /* position:ab; */
+
+           
+
+
+
+        }
+
+        #register {
+            background: #ffffff;
+            border: 2px solid #e5e5e5;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 50%;
+            margin: auto;
+            display: none;
+            position: relative; 
+            top: 12vh;
+        }
+    </style>
+    <!-- 
+    <style>
+        #login {
+            border: 2px solid black;
+            position: relative;
+            display: none;
+
+        }
+
+        #register {
+            border: 2px solid black;
+            position: relative;
+            display: none;
+            /* display: block; */
+        }
+
+        .xbtn {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        #menu {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .container {
+            display: none;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .alert {
+
+            border: 2px solid black;
+            display: inline-block;
+            padding: 5px;
+
+
+        }
+
+        .alertPapa {
+            display: none;
+            ;
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <img src="pic4.png" alt="error" class="imghero">
+
+    <div id="navbar">
+        <span>Samaya</span>
+        <div id="menu">
+            <span class="blackbtn" style="color: white;border-radius: 30px;">Home</span>
+            <span>About US</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </div>
+        <button id="navbtn">Login</button>
+    </div>
+
+    <div class="hello_msg">
+        <h1>welcome to Digital Clock</h1>
+        <h4>login to See content !!!</h4>
+        <i class="fa-solid fa-user-lock"></i>
+    </div>
+
+
+
+    <div class="alertPapa">
+        <!-- <span class="alert"></span> -->
+
+    </div>
+
+
+    <div class="container">
+    </div>
+
+
+    <div class="papa" style="display: none;">
+        <div id="login">
+            <button class="xbtn">X</button>
+            <form id="loginForm">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter your Username">
+                <br> <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your Password">
+                <br>
+                <button id="loginbtn">Login</button><span class="pointer" onclick="openreg()">Sign Up?</span>
+            </form>
+        </div>
+        <div class="pic"></div>
+
+    </div>
+    
+    <div class="repapa">
+        <div id="register">
+            <button class="xbtn">X</button>
+            <form id="registerForm">
+                <label>Username</label>
+                <input type="text" name="Username" id="Rusername" placeholder="Enter your Username">
+                <br> <label>Password</label>
+                <input type="password" name="password" id="Rpassword" placeholder="Enter your Password">
+                <br>
+                <label>Re-Password</label>
+                <input type="password" name="password" id="Re_password" placeholder="Enter your Password">
+                <br>
+                <label>Email</label>
+                <input type="email" name="email" id="Remail" placeholder="Enter your email">
+                <br>
+                <button id="registerbtn">register</button>
+                <span class="pointer" onclick="openlogin()">Already have a/c Login?</span>
+            </form>
+
+        </div>
+        <div class="pic"></div>
+    </div>
+
+
+
+</body>
+<script>
+    const navbtn = document.getElementById("navbtn");
+    const loginbtn = document.getElementById("loginbtn");
+    const regbtn = document.getElementById("registerbtn");
+    const loginBox = document.getElementById("login");
+    const registerBox = document.getElementById("register");
+    const crossbtn = document.querySelectorAll(".xbtn");
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const mainpage = document.getElementsByClassName("container")[0];
+    const alertpapa = document.getElementsByClassName("alertPapa")[0];
+    const papa = document.getElementsByClassName("papa")[0];
+    const loginpic = document.getElementsByClassName("pic")[0];
+    const registerpic = document.getElementsByClassName("pic2")[0];
+    const Rusername = document.getElementById("Rusername");
+    const Rpassword = document.getElementById("Rpassword");
+    const Re_Password = document.getElementById("Re_password");
+    const email = document.getElementById("Remail");
+    const hello_msg = document.getElementsByClassName("hello_msg")[0];
+    const imghero = document.getElementsByClassName("imghero")[0];
+    const repapa=document.getElementsByClassName("repapa")[0];
+    
+    let islogin = false;
+    let lock = true;
+    let found = false;   // use for finding people id pass if existed
+    let registrationRunning = false;
+    let tasks = JSON.parse(localStorage.getItem("task")) || {};
+    tasks["mahak"] = { "password": "123", "email": "mahak111@gmail.com" };
+    tasks["yogi"] = { "password": "123", "email": "yogi111@gmail.com" };
+    localStorage.setItem("task", JSON.stringify(tasks));
+
+
+
+
+
+
+    if (!lock) {
+        openClock(username);
+    }
+
+
+
+
+    navbtn.addEventListener("click", () => {
+        if (!islogin) {
+            openlogin();
+
+        }
+        else {
+            openreg();
+
+        }
+    })
+
+
+    regbtn.addEventListener("click", () => {
+
+    })
+
+
+    crossbtn.forEach((xbtn) => {
+        console.log("btn x")
+        xbtn.addEventListener("click", () => {
+            xbtn.parentElement.style.display = "none";
+            // mainpage.style.display="block";
+            mainpage.style.display = "none";
+            papa.style.display = "none";
+            imghero.style.display = "block";
+            hello_msg.style.display = "block";
+
+        });
+    });
+
+
+
+    //    ######################## LOGIN #########################################
+
+
+
+    loginbtn.addEventListener("click", (e) => {
+        e.preventDefault();  // didnt allow to refresh the page as form by deafut take the loginbtn as submit btn
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username == "" || password == "") {
+            alert("Empty field. Please provide both username and password.");
+        }
+
+        else {
+            SearchIntoLocal(username, password);
+        }
+    })
+
+
+    function SearchIntoLocal(username, password) {
+        const string = localStorage.getItem("task");
+        const obj = (string) ? JSON.parse(string) : {};
+
+        if (!obj[username]) {
+            alert("Invalid Username. User not found.");
+            console.log("Access Denied: Username not found");
+            return;
+        }
+        if (obj[username]) {
+            if (obj[username].password != password) {
+                alert("Invalid Password. Please try again.");
+                console.log("Access Denied: Incorrect password");
+                return;
+            }
+        }
+        lock = false;
+        openClock(username);
+        found = true;
+
+        console.log("Access grant !!!");
+        const usernameInput = document.getElementById("username");
+        const passwordInput = document.getElementById("password");
+        usernameInput.value = "";
+        passwordInput.value = "";
+
+
+        const span = document.createElement("span");
+        span.className = "alert";
+        span.innerText = "login Succesfull";
+        span.style.display = "block";
+        span.style.backgroundColor = "lightgreen";
+        span.style.margin = "10px";
+        alertpapa.append(span);
+
+        alertpapa.style.display = "block";
+        setTimeout(() => {
+            span.parentElement.style.display = "none";
+            span.remove();
+        }, 2000);
+
+    }
+
+
+
+
+
+
+
+
+    //    ######################## Register #########################################
+
+
+
+
+
+    regbtn.addEventListener("click", (e) => {
+        console.log("Register button clicked");
+        e.preventDefault();
+
+        const Rusername = document.getElementById("Rusername").value;
+        const Rpassword = document.getElementById("Rpassword").value;
+        const Re_password = document.getElementById("Re_password").value;
+        const email = document.getElementById("Remail").value;
+
+
+        if (!Rusername || !Rpassword || !Re_password || !email) {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        if (Rpassword !== Re_password) {
+            alert("Passwords do not match. Please re-enter the passwords.");
+            return;
+        }
+
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+
+        const tasks = JSON.parse(localStorage.getItem("task")) || {};
+        if (tasks[Rusername]) {
+            alert("Username already exists. Please choose a different username.");
+            return;
+        }
+
+
+        tasks[Rusername] = { password: Rpassword, email: email };
+        localStorage.setItem("task", JSON.stringify(tasks));
+        console.log("Registration successful for user:", Rusername);
+
+
+        const span = document.createElement("span");
+
+        span.className = "alert";
+        span.innerText = "Registration Successful!";
+        span.style.display = "block";
+        span.style.backgroundColor = "lightgreen";
+        span.style.margin = "10px";
+        alertpapa.append(span);
+        alertpapa.style.display = "block";
+        setTimeout(() => {
+            span.parentElement.style.display = "none";
+            span.remove();
+        }, 2000);
+
+
+        document.getElementById("Rusername").value = "";
+        document.getElementById("Rpassword").value = "";
+        document.getElementById("Re_password").value = "";
+        document.getElementById("Remail").value = "";
+
+
+        registerBox.style.display = "none";
+        openlogin();
+    });
+
+
+    function searchTheuser(Rusername, Rpassword, Re_Password, email) {
+
+        const str = localStorage.getItem("task");
+        const obj = (str) ? JSON.parse(str) : {};
+        if (obj == {}) return false;
+        if (obj[Rusername] || (Rpassword == obj[Rusername] && obj[Rusername].email == email)) {
+            alert("Username existed !!! Please try diffent or  Login into your Account");
+            return true;
+        }
+        return false;
+
+    }
+
+    function saveToLocal(Rusername, Rpassword, email) {
+
+        const string = localStorage.getItem("task");
+        const obj = (string) ? JSON.parse(string) : {};
+        var pass = parseInt(Rpassword);
+        obj[Rusername] = {
+            pass,
+            email,
+        }
+        const objToStr = JSON.stringify(obj);
+        localStorage.setItem("task", objToStr);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // ############################ Login Page  ##############################
+
+
+    function openlogin() {
+        islogin = true;
+        navbtn.innerText = "Register";
+        loginBox.style.display = "block";
+        registerBox.style.display = "none";
+        mainpage.style.display = "none";
+        hello_msg.style.display = "none";
+        papa.style.display = "block";
+        papa.style.display = "flex";
+        imghero.style.display = "none";
+        pic.style.display = "block";
+
+    }
+
+
+    // #########################  Register Page   ##############################
+
+    function openreg() {
+        navbtn.innerText = "Login";
+        hello_msg.style.display = "none";
+        loginBox.style.display = "none";
+        islogin = false;
+        navbtn.innerText = "Login";
+        registerBox.style.display = "block";
+        mainpage.style.display = "none";
+        papa.style.display = "none";
+        imghero.style.display = "none";
+        repapa.style.display='block';
+
+
+
+    }
+
+
+
+    // ###################### Main Page ###########################################
+
+    function openClock(username) {
+        islogin = false;  // taki jese hi logout kru login page khule
+        const h1 = document.createElement("h1");
+        const h2 = document.createElement("h1");
+        h2.innerText = "Login SuccessFull ";
+        h1.innerText = username;
+        mainpage.append(h2, h1);
+        mainpage.style.display = "block";
+        hello_msg.style.display = "none";
+        loginBox.style.display = "none";
+        navbtn.innerText = "Login Out";
+        navbtn.addEventListener("click", () => {
+            h1.remove();
+            h2.remove();
+
+        })
+
+
+
+    }
+
+
+</script>
+
+</html>

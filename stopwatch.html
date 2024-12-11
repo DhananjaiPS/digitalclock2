@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/horizontal-rule?f=classic&s=solid">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/horizontal-rule?f=classic&s=solid">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baumans&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        /* Base styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* background: linear-gradient(to right, #00c6ff, #0072ff); */
+            /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+            /* background: linear-gradient(112.1deg, rgb(23, 24, 26) 11.4%, rgb(51, 59, 87) 70.2%); */
+            background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 40px;
+            margin: 20px;
+            font-size: 48px;
+            text-align: center;
+            color: white;
+            width: 300px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .btns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        button {
+            padding: 15px 25px;
+            margin: 2px;
+            border: none;
+            border-radius: 50px;
+            font-size: 2vw;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100px;
+
+
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #start {
+            background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+            background-color: #4caf50;
+            font-size: 1.12rem;
+
+           
+
+        }
+
+        #start:hover {
+            background-color: #45a049;
+        }
+
+        #stop {
+            background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+            /* background-color: #f44336; */
+            font-size: 1.12rem;
+       
+
+        }
+
+        #stop:hover {
+            background-color: #d32f2f;
+        }
+
+        #reset {
+            background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+            /* background-color: #2196f3; */
+            font-size: 1.12rem;
+
+            
+        }
+
+        #reset:hover {
+            background-color: #1976d2;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                font-size: 36px;
+                width: 90%;
+            }
+
+            button {
+                font-size: 14px;
+                width: 100px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            button {
+                width: 90px;
+                padding: 12px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div style="color: white;font-size: 1.6rem;"><i class="fa-solid fa-stopwatch"></i></div> -->
+
+    <div class="container"></div>
+    <div class="btns">
+        
+        <button id="start"><i class="fa-solid fa-play"></i></button>
+        <button id="stop">Stop&nbsp;</button>
+        <button id="reset">Reset</button>
+    </div>
+
+
+</body>
+<script>
+    const time = document.createElement("span");
+    const par = document.getElementsByClassName("container")[0];
+    const startBtn = document.getElementById("start");
+    const endbtn = document.getElementById("stop");
+    const resetbtn = document.getElementById("reset");
+    var stopwatch;
+    var flag = false;
+    time.innerText = '0';
+    par.append(time);
+    startBtn.addEventListener("click", () => {
+        
+        if (!flag) {
+            startBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+            endbtn.innerHTML='<i class="fa-solid fa-flag"></i>';
+            flag = true;
+            timer();
+        }
+        else{
+            flag=false;
+            startBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+            endbtn.innerText="Stop";
+            // clearInterval(stopwatch);
+
+        }
+
+    });
+
+   
+    endbtn.addEventListener("click", () => {
+        if(!flag){
+
+            clearInterval(stopwatch);
+            flag = false;
+        }
+        else{
+
+        }
+    });
+    resetbtn.addEventListener("click", () => {
+        startBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+
+        clearInterval(stopwatch);
+        t = 0;
+        time.innerText = `${t}`;
+        // timer();
+
+    });
+
+
+
+
+    let t = 0
+    function timer() {
+        stopwatch = setInterval(() => {
+            time.innerText = `${t}`;
+            t++;
+        }, 300);
+
+    }   
+</script>
+
+</html>

@@ -1,0 +1,399 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(109.6deg, rgb(253, 199, 141) 11.3%, rgb(249, 143, 253) 100.2%);
+    /* background: linear-gradient(to right, #434343 0%, black 100%); */
+
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allicons {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    background: linear-gradient(109.6deg, rgb(253, 199, 141) 11.3%, rgb(249, 143, 253) 100.2%);
+
+}
+
+.box {
+    font-size: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    width: 34vh;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+@media (max-width: 900px) {
+    .box span {
+        display: none;
+
+    }
+
+    .box {
+        width: 5vh;
+    }
+
+}
+
+.alarm {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+    width: 70vh;
+    height: 23vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    /* Shadow added */
+}
+
+.alarm:hover {
+    /* scale: 0.9; */
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.5);
+   
+
+}
+
+.herobox {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.subalarm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0056b3; */
+
+}
+
+.alarmInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+#SetAlaram {
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+    width: 20vh;
+    height: 6vh;
+
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#SetAlaram:hover{
+    /* background: linear-gradient(to top, #c05ef9 0%, #f948be 100%); */
+    background: linear-gradient(106.7deg, rgb(251, 0, 145) -2.6%, rgb(251, 134, 145) 31%, rgb(251, 158, 145) 45.8%, rgb(251, 218, 145) 100.1%);
+    color: #ffffff;
+}
+
+.alarmListBox {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.timecontainer {
+    display: block;
+    padding: 20px;
+    max-width: 350px;
+    margin: 20px auto;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(101, 72, 255, 0.5);
+    /* Shadow and glow */
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.timecontainer:hover {
+
+    transform: scale(1.05);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(101, 72, 255, 0.8);
+    /* Stronger glow */
+}
+
+#timebox {
+    margin: 15px 0;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#timebox:hover {
+    color: white;
+}
+
+#timeline {
+
+    margin: 10px 0;
+    font-size: 1.7em;
+    color: #ffffff;
+}
+
+#timeline:hover {
+    color: white;
+}
+.stopwatch{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+    width: 60vh;
+    color: white;
+    gap: 23px;
+    height: 29vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+
+
+}
+.timer{
+    background-color: #6a11cb;
+    width: 60vh;
+    min-height: 20vh;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);   
+
+}
+.timercontainer input {    
+    width: 12vh; 
+    height: 5vh; 
+    gap: 2vh;
+    font-size: 1.2rem;
+    text-align: center; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.timercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+
+    /* margin-top: 3vh; */
+
+}
+.timercontainer span{
+    font-size: 2rem;
+    margin: 2vh;
+
+}
+.btns{
+
+}
+.time span {
+    display: inline-block;
+}
+
+time .gap {
+    padding: 0 5px; /* Adjust spacing as needed */
+    font-weight: bold; /* Optional for visibility */
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 23px;
+    
+
+}
+.btns{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.subbtn{
+    width: 13vh;
+    height: 5.5vh;
+    font-size: 1.2rem;
+
+
+
+}
+.subbtn i{
+    font-size: 1.1rem;
+}
+
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(101, 72, 255, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(101, 72, 255, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(101, 72, 255, 0.5);
+    }
+}
+
+.timecontainer:hover #timebox {
+    animation: glowing 1.5s infinite;
+}
+
+
+#red{
+    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+}
+.btns button {
+    padding: 10px 15px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background: linear-gradient(106.7deg, rgb(251, 0, 145) -2.6%, rgb(251, 134, 145) 31%, rgb(251, 158, 145) 45.8%, rgb(251, 218, 145) 100.1%); */
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+    color: white;
+}
+
+.btns button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .allicons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .box {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .alarm {
+        width: 95%;
+    }
+
+    .alarmInput {
+        width: 50px;
+        font-size: 14px;
+    }
+
+    #SetAlaram {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .btns button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .timercontainer input {
+        width: 12vh;
+        padding: 5px;
+    }
+    .timercontainer span{
+        font-size: 2rem;
+        margin: 1vh;
+        
+    }
+}
+
+/* @media (max-width: 769px) {
+    .allicons {
+        width: 60%;
+    }
+
+    .alarm {
+        width: 50%;
+    }
+
+    .alarmInput {
+        width: 80px;
+        font-size: 18px;
+    }
+
+    #SetAlaram {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+
+    .btns button {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    .timercontainer input {
+        width: 40px;
+        padding: 6px;
+    }
+} */
